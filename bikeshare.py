@@ -4,7 +4,7 @@
 #
 # Author:      sn2314(Sarfraz Nayeem)
 #
-# Created:     02/01/2020
+# Created:     01/16/2020
 # Copyright:   (c) Sarfraz Nayeem 2020
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
@@ -22,6 +22,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
+
 
     Returns:
         (str) city - name of the city to analyze
@@ -85,7 +86,7 @@ def load_data(city, month, day):
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
     df['hour'] = df['Start Time'].dt.hour
-    
+
     #print("Month in load fn",df['Start Time'].dt.month)
 
     # filter by month if applicable
@@ -95,7 +96,7 @@ def load_data(city, month, day):
         month = months.index(month) + 1
         df = df[df['month'] == month]
     # filter by month to create the new dataframe
-    
+
 
     # filter by day of week if applicable
     if day != 'all':
@@ -194,28 +195,28 @@ def user_stats(df):
             print('Gender information is not available for this city')
     except KeyError:
         print("\nEarliest Year:\nNo Gender available for this month.")
-        
-        
+
+
     try:
         earliest_birth_year = df['Birth Year'].min()
         print('\nEarliest birth year is:', earliest_birth_year)
     except KeyError:
         print("\nEarliest Year:\nNo data available for this month.")
 
-    
+
     try:
         most_recent_year = df['Birth Year'].max()
         print('\nMost Recent birth Year:', most_recent_year)
     except KeyError:
         print("\nMost Recent birth Year:\nNo data available for this month.")
-        
+
     try:
         most_common_year = df['Birth Year'].value_counts().idxmax()
         print('\nMost Common Year of birth:', most_common_year)
     except KeyError:
         print("\nMost Common Year:\nNo data available for this month.")
 
-    
+
         print("\nThis took %s seconds." % (time.time() - start_time))
         print('-'*40)
 
@@ -226,23 +227,23 @@ def display_data(df):
    j = 5
    dat = input("\n Would you like to view first 5 rows of data. Please write 'yes' or 'no' \n").lower()
    while True:
-      
+
        if dat.lower() == 'no':
            return
-        
-      
+
+
        if dat.lower() == 'yes':
             print(df.iloc[i:j])
             dat= input("\n Would you like to see five more rows of the data used to compute the stats? Please write 'yes' or 'no' \n").lower()
             i =i+ 5
             j =j+ 5
-          
-         
-        
 
 
-        
-        
+
+
+
+
+
 def main():
     print ("********************************")
     print ("In the Main block")

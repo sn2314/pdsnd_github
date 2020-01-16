@@ -9,6 +9,7 @@ BikeShare Python
 ### Description
 
 Displays bikeshare statistics about 3 cities
+The 3 cities are Chicago,Washington,New York
 
 ### Files used
 Include the files used
