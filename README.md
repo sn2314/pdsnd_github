@@ -4,7 +4,7 @@
 
 ### Project Title
 
-BikeShare Python changes
+BikeShare Python changes.
 
 ### Description
 
@@ -13,7 +13,7 @@ The 3 cities are Chicago,Washington,New York
 
 ### Files used
 Include the files used
-BikeShare.python
+BikeShare.python and READFILE.md
 
 ### Credits
 
