@@ -233,6 +233,7 @@ def display_data(df):
 
 
        if dat.lower() == 'yes':
+           #Code Review issue 1 fixed.Initializing the loop incorrectly
             print(df.iloc[i:j])
             dat= input("\n Would you like to see five more rows of the data used to compute the stats? Please write 'yes' or 'no' \n").lower()
             i =i+ 5
