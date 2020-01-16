@@ -1,15 +1,20 @@
 ### Date created
-Include the date you created this project and README file.
+
+1/16/2020
 
 ### Project Title
-Replace the Project Title
+
+BikeShare Python
 
 ### Description
-Describe what your project is about and what it does
+
+Displays bikeshare statistics about 3 cities
 
 ### Files used
 Include the files used
+BikeShare.python
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
+Added by Sarfraz Nayeem
+Changes being made for bikeshare python
