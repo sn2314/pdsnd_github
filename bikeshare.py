@@ -42,7 +42,7 @@ def get_filters():
               continue
            else:
               break
-            #print('Oops! That\'s not a valid city name. Try again.')
+
 
     # get user input for month (all, january, february, ... , june)
     while True:
@@ -102,7 +102,7 @@ def load_data(city, month, day):
     if day != 'all':
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == day.title()]
-       # print("DF>>>>>>",df)
+       
 
     return df
 

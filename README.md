@@ -4,7 +4,7 @@
 
 ### Project Title
 
-BikeShare Python
+BikeShare Python changes
 
 ### Description
 
@@ -18,4 +18,4 @@ BikeShare.python
 ### Credits
 
 Added by Sarfraz Nayeem
-Changes being made for bikeshare python
+Changes being made for bikeshare python file
