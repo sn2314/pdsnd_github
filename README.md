@@ -4,7 +4,7 @@
 
 ### Project Title
 
-BikeShare Python changes.
+Explore US BikeShare data
 
 ### Description
 
@@ -17,5 +17,5 @@ BikeShare.python and READFILE.md
 
 ### Credits
 
-Added by Sarfraz Nayeem
+Added by Sarfraz Nayeem sn2314
 Changes being made for bikeshare python file
