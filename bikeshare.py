@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:
+# Name:        Explore US BikeShare data
+# Purpose:     Print Statistics about US Bikeshare
 #
 # Author:      sn2314(Sarfraz Nayeem)
 #
@@ -102,7 +102,7 @@ def load_data(city, month, day):
     if day != 'all':
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == day.title()]
-       
+
 
     return df
 
@@ -245,9 +245,7 @@ def display_data(df):
 
 
 def main():
-    print ("********************************")
-    print ("In the Main block")
-    print ("********************************")
+
 
     while True:
 
